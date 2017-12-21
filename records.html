@@ -1,0 +1,43 @@
+<html>
+<!-- tools4chat                                                              -->
+<!-- Copyright(c) 2017, J. García <u0x004a at gmail.com>                     -->
+<!-- This file is distributed under the GNU General Public License, version 2-->
+	<head>
+		<title>Records Helper</title>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="./favicon.png">
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="records.css">
+		</head>
+
+		<body>
+			<div id="header">
+				<!-- Sample -->
+				<div id="settings-box" >
+					<h3> Settings </h3 >
+					<div><textarea id="sample-ta" cols="30" rows="10"></textarea>
+						<div id="main-control-box">
+							<button onclick="T4CRecordsHelper.saveSample()" class="main-control">Save</button><button title="New records group" id="new-grup-btn" class="main-control control" onclick="T4CRecordsHelper.newRecordsGroup()" ><img class="icon" src="./assets/new.svg" alt="New" ></button>
+						</div >
+					</div>
+				</div>
+			</div>
+
+			<div id="content"></div>
+		</body>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+		  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+	crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+		  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+	crossorigin="anonymous"></script>
+		<script >
+$( function (){
+		$( "#settings-box" ).accordion({ active:false, collapsible: true });
+		
+		});
+		</script>
+				<script src="records.js"> </script>
+</html>
+
+<!--vim:set sts=2 ts=4 sw=4 noet-->
